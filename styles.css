@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #363636; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.category {
+    background-color: #363636;
+    border-bottom: 1px solid #4e4e4e; 
+    display: flex;
+    padding-left: 16px;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: center;
+    margin-top: 4px;
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+}
+
+.item {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.for-customers {
+    border-bottom: 1px solid rgb(255, 255, 255); 
+}
+
+.item + .item {
+    margin-left: 16px; 
+}
+
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 18px;
+    color: #ffffff;
+}
+
+.container1 {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.brand-name {
+    font-family: 'Coolvetica', sans-serif; 
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.nav-text {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-text span {
+    font: 14px;
+    color: #ffffff;
+}
+
+.container2 {
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    height: 50px;
+}
+
+.btn.book-now {
+    background-color: #FEE3A6;
+    padding: 4px 32px;
+}
+
+.btn.login {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    width: 108px;
+}
+
+.hero {
+    padding: 0 20px;
+}
+
+.img {
+    background-image: url(Images/hero.jpg);
+    background-size: cover; 
+    width: 100%;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    padding: 0 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.line-1, .line-2 {
+    display: block;
+}
+
+.line-1 {
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.line-2 {
+    color: #FEE3A6;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    position: absolute;
+    top: 575px;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    height: 56px;
+    border-radius: 100px;
+    padding: 0 8px;
+    padding-left: 16px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    width: auto;
+}
+
+.text-dropdown {
+    border: none;        
+    padding: 0;        
+    margin: 0; 
+    min-width: 150px;         
+    font-size: 14px;    
+    font-family: 'Poppins', sans-serif; 
+    background-color: transparent; 
+    color: #000;        
+    flex-grow: 3;     
+    overflow: hidden;  
+}
+
+.text-dropdown, .text-input {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+}
+
+.text-dropdown.date-picker {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 14px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.text-dropdown.date-picker::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+.text-dropdown {
+    border: none;
+    background-color: transparent;
+    padding: 8px;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    width: 130px;
+    cursor: pointer;
+    outline: none;
+}
+
+.cta {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.separator {
+    width: 1px; 
+    height: 20px; 
+    background-color: #CBCBCB; 
+    margin: 0 10px; 
+}
+
+.today-appointments {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown {
+    color: #ffffff;
+    padding: 50px 50px;
+    font-size: 24px;
+}
+
+.count {
+    font-weight: bold;
+}
+.partners {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 200px;
+    color: #ffffff;
+    width: 100%;
+}
+
+#partners-text {
+    letter-spacing: 8px; 
+}
+
+.partner-logo {
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    margin-top: 20px;         
+    flex-wrap: wrap;    
+    gap: auto;       
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 28px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 120px;
+    gap: 60px;
+}
+
+#seeMoreCta {
+    padding: 16px 32px;
+    color: white;
+    display: flex;
+    width: 142px;
+    height: 54px;
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.features {
+
+}
+
+.why {
+    color: white;
+    margin: 120px;
+}
+
+#whyChooseUs {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#barberShopDescription {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.why-cards {
+    color: white;
+    width: 375px;
+    height: auto;
+    padding: 12px 12px;
+    background-color: rgba(228, 228, 228, 0.06); 
+    border-radius: 16px;
+    border:1px solid #4A4A4A;
+}
+
+.why-cards::before {
+    background-color: inherit;
+}
+
+.title-text {
+    font-size: 16px;
+    font-weight: 500px;
+}
