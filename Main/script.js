@@ -1,7 +1,3 @@
-// Store the scroll position before the page reloads
-window.onbeforeunload = function() {
-    localStorage.setItem("scrollPosition", window.scrollY);
-};
 
 // Restore the scroll position after the page reloads
 window.onload = function() {
@@ -36,3 +32,17 @@ function startCountdown() {
 
 // Start the countdown
 startCountdown();
+const circle = document.querySelector('.circle');
+
+document.addEventListener('mousemove', (event) => {
+    // Get the mouse coordinates relative to the viewport
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    // Adjust for the scroll position
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+
+    // Position the circle at the mouse coordinates
+    circle.style.transform = `translate(${mouseX + scrollX - 25}px, ${mouseY + scrollY - 25}px)`;
+});

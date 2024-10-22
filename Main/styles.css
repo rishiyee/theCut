@@ -2,7 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
 
+.circle {
+    position: absolute;
+    width: 30px;  /* Circle width */
+    height: 30px; /* Circle height */
+    border-radius: 50%; /* Make it a circle */
+    pointer-events: none; /* Prevent mouse events on the circle */
+    transition: transform 0.1s ease; /* Smooth transition */
+    border: solid 1px white;
 }
 
 html, body {
@@ -248,6 +257,7 @@ html, body {
 .count {
     font-weight: bold;
 }
+
 .partners {
     text-align: center;
     margin: 20px 0;
@@ -305,8 +315,11 @@ html, body {
 
 .features {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-
+    padding-top: 100px;
+    width: 100%;
 }
 
 .why {
@@ -324,19 +337,27 @@ html, body {
     font-size: 14px;
 }
 
+.cards {
+    display: flex;
+    width: 775px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
 .why-cards {
     color: white;
     width: 375px;
-    height: auto;
+    height: 157px;
     padding: 12px 12px;
     background-color: rgba(228, 228, 228, 0.06); 
     border-radius: 16px;
-    border:1px solid #4A4A4A;
+    border: 1px solid #4A4A4A;
     display: flex;
     flex-direction: row;
     gap: 20px;
     height: fit-content;
-
 }
 
 .why-cards::before {
@@ -363,9 +384,7 @@ html, body {
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.41px;
-    
 }
-
 
 .icn {
     background-color: #000000;
@@ -377,4 +396,104 @@ html, body {
     justify-content: center;
 }
 
+.social-proof {
+    padding-top: 100px;
+}
 
+.title {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.41px;
+}
+
+.sub-title {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.41px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+}
+
+#appointments-text {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400px;
+}
+
+#appointments-count {
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.41px;
+    background: linear-gradient(90deg, #FFF 0%, #4D00FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#software-name {
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.social-proof-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 200px;
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 50px;
+}
+
+#number {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.41px;
+}
+
+#text {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.41px;
+}
