@@ -304,6 +304,8 @@ html, body {
 }
 
 .features {
+    display: flex;
+    flex-direction: row;
 
 }
 
@@ -330,6 +332,11 @@ html, body {
     background-color: rgba(228, 228, 228, 0.06); 
     border-radius: 16px;
     border:1px solid #4A4A4A;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: fit-content;
+
 }
 
 .why-cards::before {
@@ -337,6 +344,37 @@ html, body {
 }
 
 .title-text {
+    color: #FFF;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
     font-size: 16px;
-    font-weight: 500px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.41px;
 }
+
+.card-content {
+    color: #9B9B9B;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.41px;
+    
+}
+
+
+.icn {
+    background-color: #000000;
+    padding: 12px;
+    border-radius: 8px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
